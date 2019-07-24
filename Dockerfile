@@ -8,7 +8,7 @@ WORKDIR /home/builder
 
 USER builder
 
-RUN git clone https://github.com/micero/typora.git
+RUN git clone -b master https://github.com/micero/typora.git
 
 CMD /bin/bash
     
