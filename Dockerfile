@@ -11,7 +11,6 @@ USER builder
 RUN git clone -b master https://github.com/micero/typora
 
 WORKDIR /home/builder/typora
-RUN git pull
 
 CMD /bin/bash
     
