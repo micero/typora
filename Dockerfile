@@ -8,13 +8,12 @@ WORKDIR /home/builder
 
 USER builder
 
-RUN git clone -b master --single-branch https://github.com/micero/typora.git
+RUN git clone -b master https://github.com/micero/typora
 
 WORKDIR /home/builder/typora
+RUN git pull
 
-USER root 
-
-CMD ./run-script.sh
+CMD /bin/bash
     
 
                 
